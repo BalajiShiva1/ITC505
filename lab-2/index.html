@@ -152,13 +152,14 @@
 
     </div>
 
-    <footer>
-        <p>Last updated: <span id="lastModified"></span></p>
+      <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
     </footer>
     <script type="text/javascript">
-        var currentDate = new Date();
-        document.getElementById('lastModified').textContent = currentDate.toLocaleString();
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
     </script>
-
 </body>
 </html>

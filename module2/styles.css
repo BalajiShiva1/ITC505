@@ -1,0 +1,119 @@
+/* styles.css */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main */
+main {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+section h1 {
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+section h2 {
+    color: #007bff;
+}
+
+section p {
+    margin-bottom: 1rem;
+}
+
+/* Featured Initiative */
+article {
+    margin-bottom: 2rem;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Quick Links */
+aside {
+    flex-basis: 300px;
+    margin-left: 2rem;
+}
+
+aside h2 {
+    color: #007bff;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+}
+
+
+footer p, footer nav ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer nav ul {
+    list-style: none;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}

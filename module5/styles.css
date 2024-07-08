@@ -11,10 +11,10 @@ body {
     color: #333;
 }
 
-/* Navbar styling */
+/* Navbar styling using Flexbox */
 .navbar {
     background: linear-gradient(to right, #333, #555);
-    box-shadow: 0 4px 8px rgba(166, 172, 120, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -23,13 +23,14 @@ body {
 .navbar ul {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     list-style: none;
     padding: 1rem;
     margin: 0;
 }
 
 .navbar a {
-    color: rgb(255, 255, 255);
+    color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -49,9 +50,10 @@ body {
 }
 
 .main-content section {
+    position: relative; /* Relative positioning for main sections */
     border: 1px solid #ddd;
     padding: 1.5rem;
-    background: rgb(255, 255, 255);
+    background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -62,21 +64,32 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.main-content section h1, 
-.main-content section h2 {
+/* Absolute positioning for headings */
+.main-content section h1
+ {
+    position: absolute;
+    top: 20px;
+    left: 20px;
     color: #333;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    z-index: 1;
 }
 
 .main-content section p {
     color: #666;
     line-height: 1.6;
+    margin-top: 4rem; /* Add margin to avoid overlap with absolute heading */
 }
 
+/* Example of absolute positioning for images */
 .main-content section img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     margin-top: 1rem;
+    opacity: 0.9; /* Slightly transparent to see underlying text */
 }
 
 /* Product and Portfolio grids */
@@ -118,7 +131,10 @@ body {
 .portfolio-item p {
     color: #777;
 }
-
+ #heading{
+position: absolute;
+top:-3%;
+}
 /* Responsive Design */
 @media (min-width: 600px) {
     .main-content {

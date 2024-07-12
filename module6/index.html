@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="progress-bar"></div>
+    <div class="content">
+        <div id="home-container">
+            <h1>Welcome to the Programming Quiz!</h1>
+            <button onclick="goToQuiz()">Start Quiz</button>
+        </div>
+        <div id="quiz-container" class="hidden">
+            <div id="quiz-selection">
+                <h2>Choose a Quiz Topic:</h2>
+                <button onclick="startQuiz('python')">Python</button>
+                <button onclick="startQuiz('html')">HTML</button>
+                <button onclick="startQuiz('javascript')">JavaScript</button>
+            </div>
+            <div id="quiz" class="hidden">
+                <h2 id="quiz-title"></h2>
+                <div id="question-container"></div>
+                <div id="result" class="hidden">
+                    <h2>Your Score:</h2>
+                    <p id="score"></p>
+                    <p id="congrats-message" class="hidden">Congratulations! You got a perfect score!</p>
+                    <button id="try-again" onclick="tryAgain()">Try Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

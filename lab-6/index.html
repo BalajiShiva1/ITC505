@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Sorting Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Lab-6 Do something</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <main id="home">
+            <h1>Interactive Sorting Page</h1>
+            <h3>Enter Numbers to Sort</h3>
+            <input type="text" id="numberInput" placeholder="Enter numbers separated by commas">
+            <button id="sortButton">Sort Array</button>
+            <div id="arrayDisplay"></div>
+        </main>
+        <aside>
+            <a href="https://www.amazon.com/Apple-2024-MacBook-13-inch-Laptop/dp/B0CX22ZW1T/ref=sr_1_1_sspa?crid=1XNXL32EU9WZF&dib=eyJ2IjoiMSJ9.KTFFCAxZs7dqRx24c2zGwXuWikhn1432rgcSW235i6g4Tc0O_v2h4ykuPn5Jm7q70GIG_pLxMPydN5f7serhLMVlBVVlVcJSSNqoIpyBqaIrzh0Jp-1x0j6CUF2JPPMtbhyuspboTM4P34ouzKXozwRCR1tZ7no1QpoDLpHCg0wFr0afZToE8QWui4LuOJM7lM_FZCEKPhk--WY29_Di5AjK22kTXRH2Ftg3_3FfoII.zbWdLQDXrHpr5t2bxDcrq6UCpQjziYiwVpmwtmJOFSc&dib_tag=se&keywords=macbook+air&qid=1720774880&sprefix=macboo%2Caps%2C168&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank">
+                <img src="ad.jpg" alt="Advertisement">
+            </a>
+        </aside>
+        <section id="about" style="display: none;">
+            <h2>About Me</h2>
+            <p>Hi My name is Balaji. <br>Welcome to My interactive sorting page using Bubble Sort. <br>This project demonstrates the use of HTML, CSS, and JavaScript to create a user-friendly interface that allows users to input numbers and sort them using the Bubble Sort algorithm. The goal is to provide a hands-on learning experience for web development and JavaScript programming.</p>
+        </section>
+        <section id="contact" style="display: none;">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div id="contactResponse"></div>
+        </section>
+        <footer>
+           <p>Addendum:</p>
+            <li><strong>Project Overview:</strong> This project demonstrates the implementation of an interactive sorting interface on a webpage using HTML, CSS, and JavaScript.</li>
+            <br>
+            <li><strong>Implementation Details:</strong> The page is structured with a Holy Grail layout using CSS Grid. Users can input numbers, and the JavaScript code will sort these numbers using the Bubble Sort algorithm. <br>The layout includes a header, navigation sidebar, main content area, advertisement section, and footer.</li>
+            <br>
+            <li><strong>Challenges and Solutions:</strong> One challenge was ensuring the input was correctly parsed and handled. Another challenge was creating an intuitive and visually appealing layout. <br>These were solved by validating the input to handle various cases and by designing a clean, user-friendly layout using CSS.</li>
+            <br>
+            <li><strong>Learning Outcomes:</strong> This project enhanced understanding of the Holy Grail layout, user input handling, and sorting algorithms. <br>The difficulties encountered and solutions implemented improved problem-solving skills and the ability to debug and refine web applications.</li>
+            </p>
+            <p>Last updated: 
+                <span id="lastModified"></span>
+            </p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>

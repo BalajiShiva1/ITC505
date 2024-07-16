@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Own Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="image" class="contain"></div>
+    <h1>Choose Your Own Adventure</h1>
+    <div id="story">
+        <p id="story-text"></p>
+        <img id="story-image" src="" alt="Story Image">
+    </div>
+    <div id="choices"></div>
+    <footer>
+        <div id="addendum">
+            <p>Addendum:
+                In developing this "Choose Your Own Adventure" game, I focused on creating an immersive experience through engaging storytelling and captivating visual elements. The primary challenges included structuring the complex branching narrative and implementing smooth transitions between story segments. To overcome these hurdles, I utilized a JavaScript object to efficiently store and manage the intricate story structure. Additionally, I developed custom functions to dynamically update content, ensuring a seamless user experience.
+                This project significantly enhanced my understanding of interactive web design and reinforced the critical importance of user engagement in digital storytelling. It sharpened my skills in DOM manipulation and event handling in JavaScript, pushing me to create more responsive and intuitive interfaces. Moreover, the process of crafting multiple narrative paths improved my creative writing abilities and taught me to think non-linearly about plot development.
+                The experience also highlighted the value of user testing and iterative design, as I continually refined the game based on feedback to maximize player immersion and enjoyment. Overall, this project has been instrumental in expanding my web development toolkit and storytelling capabilities.
+             </div>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+        <script type="text/javascript">
+            var x = document.lastModified;
+            document.getElementById('lastModified').textContent = x;
+        </script>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

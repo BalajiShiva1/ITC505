@@ -6,7 +6,6 @@ const story = {
             { text: "Take the right path", consequence: "rightPath" }
         ],
         image: "images/start.jpg",
-        background: "images/start-background.jpg",
         width:"100%"
     },
     leftPath: {

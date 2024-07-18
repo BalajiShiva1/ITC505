@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Lib Form</title>
+</head>
+<body>
+    <h1>Mad Lib Form</h1>
+    <form action="/ITC505/lab-7/index.html" method="POST">
+        <label for="adjective1">Adjective:</label>
+        <input type="text" id="adjective1" name="adjective1" required><br><br>
+
+        <label for="noun1">Noun:</label>
+        <input type="text" id="noun1" name="noun1" required><br><br>
+
+        <label for="verb1">Verb (past tense):</label>
+        <input type="text" id="verb1" name="verb1" required><br><br>
+
+        <label for="adverb">Adverb:</label>
+        <input type="text" id="adverb" name="adverb" required><br><br>
+
+        <label for="adjective2">Another Adjective:</label>
+        <input type="text" id="adjective2" name="adjective2" required><br><br>
+
+        <input type="submit" value="Generate Mad Lib">
+    </form>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>

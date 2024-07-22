@@ -23,9 +23,6 @@ const server = http.createServer((req, res) => {
                 res.writeHead(200, { 'Content-Type': 'text/html' });
                 res.end(data);
             });
-        } else if (req.url === '/home') {
-            res.writeHead(200, { 'Content-Type': 'text/plain' });
-            res.end('Welcome to Home Page');
         } else if (req.url === '/statusCodes.html') {
             fs.readFile('statusCodes.html', (err, data) => {
                 if (err) {

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>Lights Out Game</title>
+</head>
+<body>
+    <h1>Final Project: Revenge of Lights Out</h1>
+        
+    <main class="game-container">
+        <section id="game">
+            
+            <div id="play">
+                <button id="start">Start</button>
+            </div>
+
+            <div id="win">
+                <span>WIN!</span>
+                <input id="playAgain" type="button" value="Play Again?" onClick="location.href=location.href">
+            </div>
+
+            <div id="tiles">
+                <div id="1" class="tile cornerTL"></div>
+                <div id="2" class="tile edgeT"></div>
+                <div id="3" class="tile edgeT"></div>
+                <div id="4" class="tile edgeT"></div>
+                <div id="5" class="tile cornerTR"></div>
+                <div id="6" class="tile edgeL"></div>
+                <div id="7" class="tile middle"></div>
+                <div id="8" class="tile middle"></div>
+                <div id="9" class="tile middle"></div>
+                <div id="10" class="tile edgeR"></div>
+                <div id="11" class="tile edgeL"></div>
+                <div id="12" class="tile middle"></div>
+                <div id="13" class="tile middle"></div>
+                <div id="14" class="tile middle"></div>
+                <div id="15" class="tile edgeR"></div>
+                <div id="16" class="tile edgeL"></div>
+                <div id="17" class="tile middle"></div>
+                <div id="18" class="tile middle"></div>
+                <div id="19" class="tile middle"></div>
+                <div id="20" class="tile edgeR"></div>
+                <div id="21" class="tile cornerBL"></div>
+                <div id="22" class="tile edgeB"></div>
+                <div id="23" class="tile edgeB"></div>
+                <div id="24" class="tile edgeB"></div>
+                <div id="25" class="tile cornerBR"></div>
+            </div> 
+        </section>
+
+        <section class="sidebar">
+            <p id="score"><span id="count">0</span> Moves</p>
+            <input id="reset" type="button" value="New Game" onClick="location.href=location.href">
+            <p id="rules">Tip: Turn off all lights in as few moves as possible.
+            <button class="btn" id="helpBtn">Learn Game Rules</button></p>
+            <dialog id="helpDialog">
+                <button class="close-btn" id="closeBtn">&times;</button> <!-- Close button -->
+                <h3>How to Play Game?</h3>
+                <ul>
+                    <li>Initially, some blocks will be randomly filled. Players need to take sufficient time to move the blocks one by one until all the blocks are filled.</li>
+                    <li>Once all the blocks are filled, an alert box will display the message "You Finished The Game Successfully!"</li>
+                    <li>To complete the game, players need to move each block logically based on the positions of the filled blocks.</li>
+                    <li>Press "New Game" to restart the game from the initial state.</li>
+                </ul>
+            </dialog>
+        </section>
+    </main>
+
+    <div class="addendum">
+        <h3>Addendum:</h3>
+        <p>1. The primary goal of the game is to completely fill all the default boxes with colors. Upon successful completion, an alert box will display the message "You Win!"</p>
+        <p>2. A 5x5 board is created in a matrix format where some boxes are randomly filled with color at the start.</p>
+        <p>3. Players need to logically move the boxes to turn off all the boxes with colors.</p>
+        <p>4. Clicking the "New Game" button restarts the game to its initial state, allowing the user to start over. The "Learn Game Rules" button provides a dialog box with game instructions and a close button.</p>
+        <p>5. A 5x5 grid is created using CSS grid layout. The aesthetics and usability depend on balancing the size of the cells and the spacing between them.</p>
+        <p>6. The random initial state of the colors ensures replayability. At least one box is filled initially to engage the player.</p>
+        <p>7. Due to the random starting state, balancing difficulty was challenging. To maintain a fair challenge, different setups were tested with at least one box initially filled.</p>
+        <p>8. Implementing clear visual feedback for toggling colors was difficult. Players' actions are immediately reflected by CSS classes controlling the color states and manipulating DOM elements.</p>
+        <p>9. Careful planning of the interface design and event handling for each cell was crucial to creating an intuitive and responsive interface. Smooth cell interactions and a responsive layout contributed to an engaging, user-friendly game experience.</p>
+        <p>10. The game identifies a win when all boxes lights are turned off. Upon successful completion, the game provides immediate gratification and feedback. </p>  
+    </div>
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

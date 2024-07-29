@@ -174,12 +174,13 @@ function checkWin() {
         }
     }
     if (lightsOn === 0) {
-        window.alert("You win!");
-        win.style.display = "flex";
-        game.style.display = "none";
+        setTimeout(() => {
+            window.alert("You win!");
+            win.style.display = "flex";
+            game.style.display = "none";
+        }, 200); // Adjust the delay as needed
     }
 }
-
 
 
 

@@ -36,6 +36,8 @@ body h1 {
     font-family: "Libre Baskerville", serif;
     text-transform: uppercase;
     font-weight: bold; /* Make the text bold */
+    position: absolute;
+    top: 5%;
 }
 
 .game-container {
